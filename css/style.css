@@ -106,8 +106,23 @@ body {
     font-size: 1.7rem; }
 
 .story__pictures {
-  background-color: orange;
-  grid-column: full-start / col-end 4; }
+  grid-column: full-start / col-end 4;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg); }
+
+.story__img--1 {
+  width: 100%;
+  grid-column: 2 / 6;
+  grid-row: 2 / 6; }
+
+.story__img--2 {
+  width: 115%;
+  grid-column: 4 / 7;
+  grid-row: 4 / 6;
+  z-index: 999; }
 
 .story__content {
   background-color: #f9f7f6;
