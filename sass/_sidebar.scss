@@ -2,4 +2,42 @@
   background-color: $color-primary-dark;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+
+  display: flex;
+  justify-content: left;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: none;
+  background-color: #fff;
+  height: 2.5px;
+  width: 3.5rem;
+  margin-top: 3em;
+  margin-left: 2rem;
+
+  transition: all 0.1s;
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: #fff;
+    height: 2.5px;
+    display: block;
+  }
+  &::before {
+    transform: translateY(-1.5rem);
+    width: 4.5rem;
+  }
+  &::after {
+    transform: translateY(1.3rem);
+    width: 2.5rem;
+    transition: all 0.1s;
+  }
+
+  &:hover,
+  &:hover:after,
+  &:hover:before {
+    width: 4.5rem;
+  }
 }

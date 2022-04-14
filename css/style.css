@@ -73,7 +73,33 @@ body {
 .sidebar {
   background-color: #b28451;
   grid-column: 1 / 2;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: left; }
+
+.nav-btn {
+  border: none;
+  border-radius: none;
+  background-color: #fff;
+  height: 2.5px;
+  width: 3.5rem;
+  margin-top: 3em;
+  margin-left: 2rem;
+  transition: all 0.1s; }
+  .nav-btn::before, .nav-btn::after {
+    content: "";
+    background-color: #fff;
+    height: 2.5px;
+    display: block; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem);
+    width: 4.5rem; }
+  .nav-btn::after {
+    transform: translateY(1.3rem);
+    width: 2.5rem;
+    transition: all 0.1s; }
+  .nav-btn:hover, .nav-btn:hover:after, .nav-btn:hover:before {
+    width: 4.5rem; }
 
 .header {
   background-color: red;
