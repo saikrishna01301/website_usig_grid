@@ -241,5 +241,34 @@ body {
     object-fit: cover; }
 
 .footer {
-  background-color: #eee;
-  grid-column: full-start / full-end; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem; }
+  .nav__link:link, .nav__link:visited {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-0.5rem); }
+
+.copyright {
+  color: #aaa;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%; }
